@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora:wght@500&family=Montserrat&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  
+    <title>Calm Sage</title>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+      <!-- Logo in the top-left corner -->
+      <img src="images/calm-sage.png" id="logo">
+
+      <section id="image-section">
+        <div class="image-container">
+            <img src="images/forest.jpg">
+        </div>
+    </section>
+
+      <div class="container">
+          <div id="header">
+              <h1>WELCOME ON</h1>
+              <h2>CALM SAGE</h2>
+              <label for="nameInput"></label>
+              <input type="text" id="nameInput" placeholder="Your Name">
+              <button id="setNameButton">Enter your Name</button>
+          </div>
+      </div>
+  </header>
+
+  <audio id="audio" src="music.mp3"></audio>
+  <div id="volume-icons">
+      <i class="fas fa-volume-up" id="volume-icon"></i>
+  </div>
+
+  <section id="black-section">
+    <h3>It feels so nice to see you today</h3>
+    <p>How are you feeling?</p>
+
+  
+    <div class="container">
+        <div class="circle" data-text="Circle 1">
+            <h4>Depressed</h4>
+            <p>I want you to know that I see your strength, even when the weight of depression tries to hold you down. 
+            You are not alone in this battle, and I am here to support you every step of the way. 
+            Remember, you are so much more than your struggles, and brighter days are ahead. 
+            Keep pushing forward, for each small step you take is a triumph, and your journey 
+            towards healing is a testament to your resilience. Together, we can navigate the storm 
+            and find the sunshine waiting on the other side. You've got this</p>
+        </div>
+        <div class="circle" data-text="Circle 2">
+            <h4>Stressed</h4>
+            <p>Stress is just a temporary cloud that can't dim the brightness of your spirit. 
+            Keep your head high, breathe deeply, and remember that every challenge you face 
+            is an opportunity for growth. You've got the strength to weather the storm and 
+            find the sunshine on the other side. Keep moving forward, and brighter days are 
+            on their way.</p>
+        </div>
+        <div class="circle" data-text="Circle 3">
+            <h4>Anxious</h4>
+            <p>I want you to know that your anxiety does not define you. 
+            It's a temporary storm that will pass, and you are stronger than you think. 
+            Embrace each challenge as an opportunity for growth, and remember that you 
+            have the power to rewrite your story. Your resilience is your greatest asset,
+            and I believe in your ability to conquer your fears and find peace within yourself. 
+            Keep taking one step at a time, and before you know it, you'll look back and see 
+            just how far you've come. You've got this!</p>
+        </div>
+        <div class="circle" data-text="Circle 4">
+            <h4>Healing</h4>
+            <p>Your journey of healing is a testament to your resilience and strength. 
+            Each day you move forward, no matter how small the steps may seem, you are 
+            making progress. Embrace the process, be gentle with yourself, and know that 
+            healing is not linear. You are on the path to a brighter, healthier future, 
+            and with each sunrise, you are one step closer to your best self. Keep going, 
+            and remember, your strength is your greatest healer.</p>
+        </div>
+        <div class="circle" data-text="Circle 5">
+            <h4>Moody</h4>
+            <p>Life is a beautiful rollercoaster with its ups and downs. 
+            Your moods are just a part of that ride. Embrace each moment, 
+            whether it's high or low, for they all contribute to the vibrant 
+            tapestry of your life. Keep your chin up, and know that your mood 
+            is just a passing cloud in the vast sky of your potential. 
+            Tomorrow is a new day, and with it, a chance for a brighter outlook.</p>
+        </div>
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <button id="closeButton">Close</button>
+        </div>
+    </div>
+
+    <a href="#river-section" class="scroll-down-button">
+    <i class="fas fa-arrow-down" style="color: white; margin-top: 5px;"></i>
+</section>
+
+
+<div class="container-text" id="river-section">
+  <img class="image" src="images/river.jpg" alt="Image">
+  <div class="text">It's time to meditate</div>
+  <a href="#breathing-section" class="start-button" id="start-button">Let's Start</a>
+</div>
+
+
+<section id="breathing-section">
+  <div class="gradient-background"></div>
+  <div class="breathing-text inhale">Inhale</div>
+  <div class="breathing-text exhale">Exhale</div>
+  <a href="#bubbles-section" class="scroll-button">
+    <i class="fa fa-arrow-down"></i> <!-- Replace with the Font Awesome icon you want to use -->
+  </a>
+</section>
+
+
+<section id="bubbles-section">
+  <div class="bubble-container" id="bubble-container">
+  </div>
+
+  <div class="section-text">Pop the bubbles</div>
+  <a href="#image-section" class="back-button">Back to Homepage</a>
+</section>
+
+  <section></section>
+
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="jquery.ripples-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rainyday.js/0.1/rainyday.min.js"></script>
+  <script src="main.js"></script>
+</body>

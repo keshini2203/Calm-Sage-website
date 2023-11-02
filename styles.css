@@ -1,0 +1,410 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+/* Header */
+#logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    height: auto;
+}
+
+.image-container {
+    width: 100%;
+    max-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#header {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 5%;
+}
+
+#header h1,
+#header h2 {
+    font-size: 10vh;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Volume Icons */
+#volume-icons {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 999;
+}
+
+#volume-icons i {
+    font-size: 24px;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+/* Form Styling */
+label {
+    font-size: 18px;
+    font-family: arial;
+    border: #ccc;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    padding-left: 5%;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input[type="text"]::placeholder {
+    color: #ffffff;
+}
+
+#nameInput {
+    color: white;
+}
+
+button {
+    padding: 5px 40px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e9920f;
+    transition: 1s;
+}
+
+/* Black Section */
+#black-section {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+    font-size: 3vh;
+    height: 800px;
+    background-color: black;
+}
+
+#black-section h3,
+#black-section p {
+    color: #ff6600;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 5vh;
+    font-size: 25px;
+}
+
+/* Emotion Circles */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom, #ff9c08, #ffe222);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px; 
+    margin-top: 30vh; 
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+.circle p {
+    display: none;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.popup {
+    background-color: #ffba39;
+    padding: 50px;
+    border-radius: 10px;
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    z-index: 1000; 
+    position: relative;
+    display: block; 
+}
+
+
+
+/* Animation for Emotion Circles */
+@keyframes upAndDown1 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes upAndDown2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes upAndDown3 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes upAndDown4 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes upAndDown5 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.circle:nth-child(1) {
+    animation: upAndDown1 3s infinite;
+}
+
+.circle:nth-child(2) {
+    animation: upAndDown2 4s infinite;
+}
+
+.circle:nth-child(3) {
+    animation: upAndDown3 2.5s infinite;
+}
+
+.circle:nth-child(4) {
+    animation: upAndDown4 3.5s infinite;
+}
+
+.circle:nth-child(5) {
+    animation: upAndDown5 3s infinite;
+}
+
+/* Meditation Section */
+.container-text {
+    position: relative;
+    text-align: center;
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+    height: 800px;
+    
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#start-button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #ffffff; 
+    border-radius: 10px; 
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    background-color: transparent;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.4s;
+
+}
+
+#start-button:hover {
+    background-color: #ffffff; 
+    color: black; 
+}
+
+
+#breathing-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .gradient-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #0b006d, #10002f, #000f28, #0c0026);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s linear infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .breathing-text {
+    color: white;
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0;
+    transition: opacity 5s;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #bubbles-section {
+    background-color: #000; 
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.bubble {
+    width: 50px;
+    height: 50px;
+    background: #66ccff; 
+    border-radius: 50%; 
+    position: absolute;
+    animation: float 20s linear infinite;
+}
+
+.section-text {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    color: #fff; 
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh); 
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(100vh); 
+    }
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    border: 2px solid #fff; 
+    border-radius: 20px; 
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.scroll-button {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 24px; 
+    color: #fff; 
+  }
+  
+  
